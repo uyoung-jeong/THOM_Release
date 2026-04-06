@@ -1,5 +1,5 @@
 # THOM: Generating Physically Plausible Hand-Object Meshes From Text
-### [Project Page]() | [arxiv Paper](https://arxiv.org/abs/2604.02736)
+### [Project Page](https://uyoung-jeong.github.io/THOM_Project/) | [arxiv Paper](https://arxiv.org/abs/2604.02736)
 
 [THOM: Generating Physically Plausible Hand-Object Meshes From Text](https://arxiv.org/abs/2604.02736) (CVPR 2026 Findings)
 
