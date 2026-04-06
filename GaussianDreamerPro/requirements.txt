@@ -1,0 +1,30 @@
+pip==23.3.1
+torch==2.1.2 --index-url https://download.pytorch.org/whl/cu118
+torchvision==0.16.2 --index-url https://download.pytorch.org/whl/cu118
+tqdm
+mediapipe
+Pillow
+diffusers==0.32.0
+transformers==4.51.3
+fire==0.5.0
+huggingface_hub==0.30.2
+imageio==2.31.1
+imageio-ffmpeg
+PyYAML
+safetensors
+wandb
+accelerate
+triton
+gradio
+plyfile==0.8.1
+xformers==0.0.23.post1 --index-url https://download.pytorch.org/whl/cu118
+open3d
+triton==2.1.0
+git+https://github.com/openai/point-e.git
+git+https://github.com/openai/shap-e.git
+# PyMCubes
+lpips==0.1.4
+torchmetrics==1.7.1
+git+https://github.com/uyoung-jeong/smplx.git
+git+https://github.com/uyoung-jeong/chumpy.git
+git+https://github.com/facebookresearch/pytorch3d.git@v0.7.6
