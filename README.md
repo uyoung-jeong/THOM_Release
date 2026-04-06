@@ -48,7 +48,7 @@ Download 'MANO_LEFT.pkl' and 'MANO_RIGHT.pkl' files from [MANO](https://mano.is.
 
 Download [finetuned Shap-E](https://huggingface.co/datasets/tiange/Cap3D/blob/main/misc/our_finetuned_models/shapE_finetuned_with_330kdata.pth) by Cap3D, and place it in `./load`
 
-Download [Text2HOI checkpoints]() pth files and place them in `./checkpoi
+Download [Text2HOI checkpoints]() pth files and place them in `./checkpoint/grab/`.
 
 ### Directory structure
 ```
