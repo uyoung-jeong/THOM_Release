@@ -125,7 +125,14 @@ python tools/run_hoi.py --opt ./configs/hoi/it1000_hoi.yaml --obj_prompt 'A hamb
 
 ## :bulb: Citation
 ```
-coming soon
+@InProceedings{Jeong_2026_CVPR,
+    author    = {Jeong, Uyoung and Tiruneh, Yihalem Yimolal and Chang, Hyung Jin and Baek, Seungryul and Kim, Kwang In},
+    title     = {THOM: Generating Physically Plausible Hand-Object Meshes From Text},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Findings},
+    month     = {June},
+    year      = {2026},
+    pages     = {3653-3664}
+}
 ```
 
 ## :pray: Acknowledgements
