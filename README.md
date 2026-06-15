@@ -16,6 +16,7 @@
 The generation of 3D hand-object interactions (HOIs) from text is crucial for dexterous robotic grasping and VR/AR content generation, requiring both high visual fidelity and physical plausibility. Nevertheless, the ill-posed problem of mesh extraction from text-generated Gaussians, and physics-based optimization on the erroneous meshes pose challenges. To address these issues, we introduce THOM, a training-free framework that generates photorealistic, physically plausible 3D HOI meshes without the need for a template object mesh. THOM employs a two-stage pipeline, initially generating the hand and object Gaussians, followed by physics-based HOI optimization. Our new mesh extraction method and vertex-to-Gaussian mapping explicitly assign Gaussian elements to mesh vertices, allowing topology-aware regularization. Furthermore, we improve the physical plausibility of interactions by VLM-guided translation refinement and contact-aware optimization. Comprehensive experiments demonstrate that THOM consistently surpasses state-of-the-art methods in terms of text alignment, visual realism, and interaction plausibility.
 
 ## :fire: Updates
+- 2026-06-02: Evaluation prompts and a script.
 - 2026-04-06: Initial code release.
 
 ## :hammer: Installation
@@ -121,6 +122,16 @@ python tools/run_vlrefine.py --opt configs/hoi/it1000_hoi.yaml --obj_prompt 'A h
 
 # HOI generation
 python tools/run_hoi.py --opt ./configs/hoi/it1000_hoi.yaml --obj_prompt 'A hamburger' --hand_prompt 'A right hand' --hoi_prompt 'A right hand eating a hamburger' --t2hoi_prompt 'Eat a hamburger with the right hand.' --text2hoi_pkl output/eating_hamburger/t2hoi_results/text2hoi_res_min_vlm_t.pkl --obj_pth output/eating_hamburger/obj/chkpnt7000.pth --obj_ply output/eating_hamburger/obj/point_cloud/iteration_7000/point_cloud.ply --hand_pth output/eating_hamburger/hand/chkpnt7000.pth --output_dir output/eating_hamburger/hoi
+```
+
+### Benchmark generation
+Evaluation prompts are stored in `data/t3_prompt` directoy, composed of 100 object, hand, and interaction prompts.
+We provide a script `tools/run_t3_chunkwise.py` that generates from the given prompts in chunkwise manner.
+The 100 prompts are split into 10 chunks:
+```
+python tools/run_t3_chunkwise.py --gpu 0 --chunk 1
+...
+python tools/run_t3_chunkwise.py --gpu 0 --chunk 10
 ```
 
 ## :bulb: Citation
